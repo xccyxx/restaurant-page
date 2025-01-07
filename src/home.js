@@ -30,9 +30,31 @@ const initializeHomeContent = () => {
     })
     hoursInfoContainer.append(ul);
 
+    // Location Part
+    const addressContainer = document.createElement("div");
 
+    const restaurantName = document.createElement("h4");
+    restaurantName.textContent = "Ocean Breeze Sushi";
+
+    const address = document.createElement("p");
+    address.textContent = "123 Ocean Blvd,";
+
+    const city = document.createElement("p");
+    city.textContent = "San Francisco, CA 94110,";
+
+    const country = document.createElement("p");
+    country.textContent = "United States";
+
+    addressContainer.append(restaurantName);
+    addressContainer.append(address);
+    addressContainer.append(city);
+    addressContainer.append(country);
+
+
+    // Append the sections
     content.append(introContainer);
     content.append(hoursInfoContainer);
+    content.append(addressContainer);
 }
 
 export { initializeHomeContent };
