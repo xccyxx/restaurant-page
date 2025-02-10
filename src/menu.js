@@ -66,7 +66,14 @@ export default function() {
             description: "A refreshing vegetarian roll with cucumber, avocado, pickled radish, and carrots, wrapped in nori and rice.",
             price: "$4",
             imgSrc: ""
+        },
+        {
+            title: "Tonkatsu",
+            description: "Breaded and deep-fried pork cutlet served with shredded cabbage, rice, and a tangy tonkatsu sauce.",
+            price: "$8",
+            imgSrc: ""
         }
+
     ]
 
     // Loop through the list items to render divs
