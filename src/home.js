@@ -27,7 +27,7 @@ const initializeHomeContent = () => {
         const li = document.createElement("li");
         li.textContent = liText;
         ul.append(li);
-    })
+    });
     hoursInfoContainer.append(ul);
 
     // Location Part
