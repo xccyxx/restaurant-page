@@ -1,6 +1,8 @@
 import californiaRollImg from './assets/california_roll.jpg';
 import spicyTunaRollImg from "./assets/spicy_tuna_roll.jpg";
-import dragonRollImg from "./assets/dragon_roll.jpg";
+import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
+import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
+import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
 
 import "./styles.css";
 
@@ -44,16 +46,10 @@ export default function() {
             imgSrc: spicyTunaRollImg
         },
         { 
-            title: "Dragon Roll",
-            description: "Shrimp tempura and avocado rolled together, topped with thin slices of eel, eel sauce, and spicy mayo for a sweet and savory kick.",
-            price: "$7",
-            imgSrc: dragonRollImg
-        },
-        { 
             title: "Salmon Nigiri",
             description: "Thinly sliced fresh salmon served atop a small mound of seasoned sushi rice for a simple yet flavorful bite.",
             price: "$4",
-            imgSrc: ""
+            imgSrc: salmonNigiriImg
         },
         { 
             title: "Tempura Udon",
@@ -67,13 +63,12 @@ export default function() {
             price: "$4",
             imgSrc: ""
         },
-        {
-            title: "Tonkatsu",
-            description: "Breaded and deep-fried pork cutlet served with shredded cabbage, rice, and a tangy tonkatsu sauce.",
-            price: "$8",
+        { 
+            title: "Unagi Donburi",
+            description: "Grilled eel glazed with a sweet soy-based sauce, served over a bowl of steaming white rice for a satisfying and flavorful meal.",
+            price: "$9",
             imgSrc: ""
         }
-
     ]
 
     // Loop through the list items to render divs
