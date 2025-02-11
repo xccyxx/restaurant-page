@@ -1,11 +1,10 @@
 import californiaRollImg from './assets/california_roll.jpg';
 import spicyTunaRollImg from "./assets/spicy_tuna_roll.jpg";
 import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
-import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
-import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
-
+import tempuraUdoniImg from "./assets/tempura_udon.jpg";
+import veggieMakiImg from "./assets/veggie_maki.jpg";
+import unagiDonburiImg from "./assets/unagi_donburi.jpg";
 import "./styles.css";
-
 
 
 export default function() {
@@ -55,19 +54,19 @@ export default function() {
             title: "Tempura Udon",
             description: "A warm bowl of udon noodles in a savory broth, accompanied by crispy tempura vegetables and shrimp.",
             price: "$7",
-            imgSrc: ""
+            imgSrc: tempuraUdoniImg
         },
         { 
             title: "Vegetable Maki",
             description: "A refreshing vegetarian roll with cucumber, avocado, pickled radish, and carrots, wrapped in nori and rice.",
             price: "$4",
-            imgSrc: ""
+            imgSrc: veggieMakiImg
         },
         { 
             title: "Unagi Donburi",
             description: "Grilled eel glazed with a sweet soy-based sauce, served over a bowl of steaming white rice for a satisfying and flavorful meal.",
             price: "$9",
-            imgSrc: ""
+            imgSrc: unagiDonburiImg
         }
     ]
 
@@ -98,7 +97,6 @@ export default function() {
         const price = document.createElement("h4");
         price.textContent = dish.price;
         dishContainer.append(price);
-
         itemsContainer.append(dishContainer);
     });
     content.append(itemsContainer);
