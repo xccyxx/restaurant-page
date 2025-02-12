@@ -4,29 +4,28 @@ import salmonNigiriImg from "./assets/salmon_nigiri.jpg";
 import tempuraUdoniImg from "./assets/tempura_udon.jpg";
 import veggieMakiImg from "./assets/veggie_maki.jpg";
 import unagiDonburiImg from "./assets/unagi_donburi.jpg";
-import "./styles.css";
 
 
 export default function() {
     const content = document.querySelector("#content");
 
-    // A list to container divs
-    const containersList = [ "header", "items" ];
+    // A list to section divs
+    const sections = [ "header", "items" ];
 
-    containersList.forEach(container => {
-        const containerDiv = document.createElement("div");
+    sections.forEach(section => {
+        const sectionDiv = document.createElement("div");
 
-        if (container === "header") {
+        if (section === "header") {
             const header = document.createElement("h2");
             header.textContent = "Menu";
-            containerDiv.append(header);
+            sectionDiv.append(header);
         }
 
-        if (container === "items") {
-            containerDiv.classList.add("itemsContainer");
+        if (section === "items") {
+            sectionDiv.classList.add("itemSection");
         }
 
-        content.append(containerDiv);
+        content.append(sectionDiv);
     })
 
 
@@ -71,7 +70,7 @@ export default function() {
     ]
 
     // Loop through the list items to render divs
-    const itemsContainer = document.querySelector(".itemsContainer");
+    const itemSection = document.querySelector(".itemSection");
     dishes.forEach(dish => {
         const dishContainer = document.createElement("div");
         // Append the title
@@ -97,7 +96,7 @@ export default function() {
         const price = document.createElement("h4");
         price.textContent = dish.price;
         dishContainer.append(price);
-        itemsContainer.append(dishContainer);
+        itemSection.append(dishContainer);
     });
-    content.append(itemsContainer);
+    content.append(itemSection);
 }

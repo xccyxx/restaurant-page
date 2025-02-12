@@ -1,3 +1,10 @@
+.container {
+    background: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 50%;
+}
+
 .dishImg {
     width: 300px;
     height: 300px;

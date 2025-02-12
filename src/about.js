@@ -1,18 +1,18 @@
 export default function() {
     const content = document.querySelector("#content");
-    // A list to container divs
-    const containersList = [ "header", "details" ];
+    // A list to section divs
+    const sections = [ "header", "details" ];
     
-    containersList.forEach(container => {
-        const containerDiv = document.createElement("div");
+    sections.forEach(section => {
+        const sectionDiv = document.createElement("div");
 
-        if (container === "header") {
+        if (section === "header") {
             const header = document.createElement("h2");
             header.textContent = "Contact Us";
-            containerDiv.append(header);
+            sectionDiv.append(header);
         }
 
-        if (container === "details") {
+        if (section === "details") {
             const contentLines = [
                 "For any inquiries or reservations, feel free to reach out to us:", 
                 "<strong>Phone:</strong> +1 (415) 555-1234",
@@ -33,9 +33,9 @@ export default function() {
                 }
                 details.append(row);
             })
-            containerDiv.append(details);
+            sectionDiv.append(details);
         }
-        content.append(containerDiv);
+        content.append(sectionDiv);
     })
 
 }
