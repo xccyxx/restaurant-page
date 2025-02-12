@@ -1,5 +1,9 @@
 const initializeHomeContent = () => {
     const content = document.querySelector("#content");
+    // name part
+    const nameSection = document.createElement("div");
+    nameSection.appendChild(document.createElement("h1")).textContent = "Ocean Breeze Sushi";
+
 
     // Intro part
     const introSection = document.createElement("div");
@@ -52,6 +56,7 @@ const initializeHomeContent = () => {
 
 
     // Append the sections
+    content.append(nameSection);
     content.append(introSection);
     content.append(hoursInfoSection);
     content.append(addressSection);
