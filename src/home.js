@@ -4,7 +4,6 @@ const initializeHomeContent = () => {
     const nameSection = document.createElement("div");
     nameSection.appendChild(document.createElement("h1")).textContent = "Ocean Breeze Sushi";
 
-
     // Intro part
     const introSection = document.createElement("div");
     const intro = document.createElement("p");
