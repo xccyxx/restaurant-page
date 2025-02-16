@@ -10,20 +10,20 @@ export default function() {
     const content = document.querySelector("#content");
 
     // A list to section divs
-    const sections = [ "header", "items" ];
+    const sections = [ "title", "items" ];
 
     sections.forEach(section => {
         const sectionDiv = document.createElement("div");
 
-        if (section === "header") {
-            const header = document.createElement("h2");
-            header.textContent = "Menu";
-            sectionDiv.classList.add("header");
-            sectionDiv.append(header);
+        if (section === "title") {
+            const title = document.createElement("h1");
+            title.textContent = "Menu";
+            sectionDiv.classList.add("title");
+            sectionDiv.append(title);
         }
 
         if (section === "items") {
-            sectionDiv.classList.add("itemSection");
+            sectionDiv.classList.add("items");
         }
 
         content.append(sectionDiv);
@@ -71,11 +71,12 @@ export default function() {
     ]
 
     // Loop through the list items to render divs
-    const itemSection = document.querySelector(".itemSection");
+    const itemSection = document.querySelector(".items");
     dishes.forEach(dish => {
         const dishContainer = document.createElement("div");
         // Append the title
         const title = document.createElement("h3");
+        title.classList.add("title");
         title.textContent = dish.title;
         dishContainer.append(title);
 
@@ -97,6 +98,9 @@ export default function() {
         const price = document.createElement("h4");
         price.textContent = dish.price;
         dishContainer.append(price);
+
+        // add "card" class for styling like a card
+        dishContainer.classList.add("card");
         itemSection.append(dishContainer);
     });
     content.append(itemSection);

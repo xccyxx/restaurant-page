@@ -1,16 +1,16 @@
 export default function() {
     const content = document.querySelector("#content");
     // A list to section divs
-    const sections = [ "header", "details" ];
+    const sections = [ "title", "details" ];
     
     sections.forEach(section => {
         const sectionDiv = document.createElement("div");
 
-        if (section === "header") {
-            const header = document.createElement("h2");
-            header.textContent = "Contact Us";
-            sectionDiv.classList.add("header");
-            sectionDiv.append(header);
+        if (section === "title") {
+            const title = document.createElement("h1");
+            title.textContent = "Contact Us";
+            sectionDiv.classList.add("title");
+            sectionDiv.append(title);
         }
 
         if (section === "details") {

@@ -3,7 +3,7 @@ const initializeHomeContent = () => {
     // name part
     const nameSection = document.createElement("div");
     nameSection.appendChild(document.createElement("h1")).textContent = "Ocean Breeze Sushi";
-    nameSection.classList.add("header");
+    nameSection.classList.add("title");
 
     // Intro part
     const introSection = document.createElement("div");
