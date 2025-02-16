@@ -3,12 +3,19 @@ const initializeHomeContent = () => {
     // name part
     const nameSection = document.createElement("div");
     nameSection.appendChild(document.createElement("h1")).textContent = "Ocean Breeze Sushi";
+    nameSection.classList.add("header");
 
     // Intro part
     const introSection = document.createElement("div");
-    const intro = document.createElement("p");
-    intro.textContent = "Welcome to Ocean Breeze Sushi, where we bring the finest sushi to your table with a perfect blend of tradition and innovation. Nestled in the heart of San Francisco, we pride ourselves on offering only the freshest ingredients, expertly prepared by our talented sushi chefs. Whether you're a sushi aficionado or trying it for the first time, our menu is designed to satisfy every craving. Join us for a culinary journey that promises delightful flavors, impeccable service, and a warm, welcoming atmosphere.";
-    introSection.append(intro);
+    const introRow1 = document.createElement("p");
+    introRow1.textContent = "Welcome to Ocean Breeze Sushi, where we bring the finest sushi to your table with a perfect blend of tradition and innovation.";
+    const introRow2 = document.createElement("p");
+    introRow2.textContent = "Nestled in the heart of San Francisco, we pride ourselves on offering only the freshest ingredients, expertly prepared by our talented sushi chefs. Whether you're a sushi aficionado or trying it for the first time, our menu is designed to satisfy every craving."
+    const introRow3 = document.createElement("p");
+    introRow3.textContent = "Join us for a culinary journey that promises delightful flavors, impeccable service, and a warm, welcoming atmosphere.";
+    introSection.append(introRow1);
+    introSection.append(introRow2);
+    introSection.append(introRow3);
 
     // Hours part
     const hoursInfoSection = document.createElement("div");

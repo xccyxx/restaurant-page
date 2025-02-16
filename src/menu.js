@@ -18,6 +18,7 @@ export default function() {
         if (section === "header") {
             const header = document.createElement("h2");
             header.textContent = "Menu";
+            sectionDiv.classList.add("header");
             sectionDiv.append(header);
         }
 
